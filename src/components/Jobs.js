@@ -10,4 +10,3 @@ const Jobs = ({data}) => {
 }
 
 export default Jobs
-Jobs
