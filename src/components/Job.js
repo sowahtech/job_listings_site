@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Job = (props) => {
-    let keywords = [role, level, ...languages, ...tools];
     const {
         company,
         contract,
@@ -16,6 +15,8 @@ const Job = (props) => {
         role,
         tools
     } = props.data;
+
+    let keywords = [role, level, ...languages, ...tools];
     return (
         <div className="job-container">
             <div className="logo">
