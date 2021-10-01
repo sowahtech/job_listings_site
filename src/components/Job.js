@@ -27,6 +27,14 @@ const Job = (props) => {
                     {props.data.new && <span className="new">new!</span> }
                     {props.data.new && <span className="new">featured</span> }
                 </div>
+
+                <div className="position">{position}</div>
+
+                <div className="details">
+                    <span>{postedAt}</span>
+                    <span>{contract}</span>
+                    <span>{location}</span>
+                </div>
             </div>
         </div>
     )
