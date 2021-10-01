@@ -18,7 +18,9 @@ const Job = (props) => {
     } = props.data;
     return (
         <div className="job-container">
-            {props.data.company}
+            <div className="logo">
+                <img src={logo} alt="company logo" />
+            </div>
         </div>
     )
 }
