@@ -1,9 +1,9 @@
-jobimport React from 'react'
+import React from 'react';
 
-const Job = () => {
+const Job = (props) => {
     return (
-        <div>
-            job
+        <div className="job-container">
+            {props.data.company}
         </div>
     )
 }
