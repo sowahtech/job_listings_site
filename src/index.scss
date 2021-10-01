@@ -10,6 +10,22 @@
   --very-dark-grayish: hsl(180, 14%, 20%);
 }
 
+//adding basic styles
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 15px;
+  font-weight: 500;
+  box-sizing: border-box;
+}
 body{
   font-family: 'Spartan', sans-serif;
+  background-color: var(--background-color);
 }
