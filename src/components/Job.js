@@ -21,6 +21,13 @@ const Job = (props) => {
             <div className="logo">
                 <img src={logo} alt="company logo" />
             </div>
+            <div className="part1">
+                <div className="company">
+                    <div className="cname">{company}</div>
+                    {props.data.new && <span className="new">new!</span> }
+                    {props.data.new && <span className="new">featured</span> }
+                </div>
+            </div>
         </div>
     )
 }
