@@ -36,7 +36,15 @@ const Job = (props) => {
                     <span>{location}</span>
                 </div>
             </div>
+            <div className="part2">
+                {
+                    keywords.map((key,id) =>
+                        <button key={id}>{key}</button>
+                    )
+                }
+            </div>
         </div>
+
     )
 }
 
