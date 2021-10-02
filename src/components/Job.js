@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Job = (props) => {
     const {
@@ -17,10 +17,25 @@ const Job = (props) => {
     } = props.data;
 
     let keywords = [role, level, ...languages, ...tools];
+
+    const [icon, setIcon] = useState("");
+
+    const importSvgs = () => {
+        const logoSvg = import(`${logo}`).then((d)=>{
+            console.log(d);
+            setIcon(d.default);
+        })
+    }
+
+    useEffect(() => {
+        importSvgs();
+    }, [logo])
+
+
     return (
         <div className="job-container">
             <div className="logo">
-                <img src={logo} alt="company logo" />
+                <img src={icon} alt="company logo" />
             </div>
             <div className="part1">
                 <div className="company">
