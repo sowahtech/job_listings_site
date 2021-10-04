@@ -54,7 +54,9 @@ const Job = (props) => {
             <div className="part2">
                 {
                     keywords.map((key,id) =>
-                        <button key={id}>{key}</button>
+                        <button onClick={() => props.setKeywords(key)} key={id}>
+                            {key}
+                        </button>
                     )
                 }
             </div>
