@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <div className="header"></div>
-	  	
+	  	{filterKeywords.length > 0 && <Header keywords = {filterKeywords} />}
       <Jobs data={data}/>
     </div>
   );
