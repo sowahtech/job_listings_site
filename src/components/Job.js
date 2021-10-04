@@ -22,7 +22,6 @@ const Job = (props) => {
 
     const importSvgs = () => {
         const logoSvg = import(`${logo}`).then((d)=>{
-            console.log(d);
             setIcon(d.default);
         })
     }

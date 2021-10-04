@@ -1,9 +1,21 @@
+import {useState, useEffect} from 'react';
 import data from "./data.json";
 import Jobs from "./components/Jobs";
+import Header from "./components/Header";
+
 function App() {
+	const [filterKeywords, setfilterKeywords] = useState([]);
+
+	const addFilterKeywords = (data) => {
+		if(!filterKeywords.includes(data)){
+			setfilterKeywords([...filterKeywords, data]);
+			console.log(filterKeywords);
+		}
+	}
   return (
     <div>
       <div className="header"></div>
+	  	
       <Jobs data={data}/>
     </div>
   );
