@@ -1,10 +1,14 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({keywords}) => {
     return (
-        <div>
-            header 
-        </div>
+       <div className="header-container">
+           {
+               keywords.map((key,id) => {
+                   return <button key={id}>{key}</button>
+               })
+           }
+       </div>
     )
 }
 
