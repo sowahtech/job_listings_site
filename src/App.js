@@ -12,6 +12,13 @@ function App() {
 			console.log(filterKeywords);
 		}
 	}
+
+	const deleteKeyword = (data) => {
+		const newKeywords = filterKeywords.filter((key) => key != data);
+		setfilterKeywords(newKeywords);
+	}
+
+	
   return (
     <div>
       <div className="header"></div>
