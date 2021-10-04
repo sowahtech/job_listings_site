@@ -18,11 +18,11 @@ function App() {
 		setfilterKeywords(newKeywords);
 	}
 
-	
+
   return (
     <div>
       <div className="header"></div>
-	  	{filterKeywords.length > 0 && <Header keywords = {filterKeywords} />}
+	  	{filterKeywords.length > 0 && <Header keywords = {filterKeywords} removeKeywords={deleteKeyword} />}
       <Jobs data={data} setKeywords = {addFilterKeywords}/>
     </div>
   );
