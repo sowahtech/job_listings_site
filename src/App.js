@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import data from "./data.json";
 import Jobs from "./components/Jobs";
 import Header from "./components/Header";
@@ -14,7 +14,7 @@ function App() {
 	}
 
 	const deleteKeyword = (data) => {
-		const newKeywords = filterKeywords.filter((key) => key != data);
+		const newKeywords = filterKeywords.filter((key) => key !== data);
 		setfilterKeywords(newKeywords);
 	}
 

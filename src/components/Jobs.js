@@ -1,12 +1,37 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Job from './Job';
 
-const Jobs = ({data, setKeywords}) => {
+const Jobs = ({data, setKeywords, keywords}) => {
 	console.log(data);
+
+    const [filteredData, setFilteredData] = useState(data);
+
+    const modifiedData = () => {
+        if(keywords.length > 0) {
+            const newData = filteredData.filter((d) => {
+                return keywords.every((key) =>{
+                    return (
+                        d.role == key ||
+                        d.level == key ||
+                        d.languages.includes(key) ||
+                        d.tools.includes(key)
+                    )
+                })
+            })
+            setFilteredData(newData);
+        }else{
+            setFilteredData(data);
+        }
+    }
+
+    useEffect(() => {
+       modifiedData();
+    }, [keywords])
+
     return (
         <div className = "jobs">
-          {data.map(d => {
-			  return <Job data={d} setKeywords = {setKeywords}/>
+          {filteredData.map(d => {
+			  return <Job key = {d.id} data={d} setKeywords = {setKeywords}/>
 		  })} 
         </div>
     );
