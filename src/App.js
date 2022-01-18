@@ -1,4 +1,4 @@
-import {useState} from 'react';
+/* import {useState} from 'react';
 import data from "./data.json";
 import Jobs from "./components/Jobs";
 import Header from "./components/Header";
@@ -29,6 +29,17 @@ function App() {
       <Jobs keywords = {filterKeywords} data={data} setKeywords = {addFilterKeywords}/>
     </div>
   );
+}
+
+export default App; */
+
+import React from 'react';
+import Home from './components/Home';
+
+function App(props) {
+	return (
+		<Home />
+	);
 }
 
 export default App;

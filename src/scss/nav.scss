@@ -1,0 +1,49 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: var(--primary-color);
+  color: white;
+
+  form {
+    margin-left: -3vw;
+  }
+
+  .menu-logo {
+    display: flex;
+    flex-direction: row;
+    padding: 3.5vh 2vh;
+
+    .logo {
+      font-size: calc(10px + 2vmin);
+      margin-left: 3vw;
+    }
+  }
+
+  .nav-right {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vh 0vw;
+
+    .login-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: calc(8px + 2vmin);
+      margin-left: -3vw;
+    }
+
+    .post-job {
+      margin-top: -2vh;
+      margin-left: 7vw;
+      height: 4vh;
+      width: 10vw;
+      background-color: orangered;
+      color: white;
+      border-radius: 1rem;
+      border: none;
+      font-size: calc(8px + 2vmin);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+#footer {
+  height: 60vh;
+  background-color: var(--primary-color);
+  color: papayawhip;
+
+  #footer-top {
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -1vh;
+    padding-top: 1vh;
+  }
+
+  hr {
+    height: 0.3vh;
+    background-color: orangered;
+    border: none;
+    margin-top: 10vh;
+  }
+
+  #contact-form {
+    margin-left: 1vw;
+    margin-top: 2vh;
+  }
+
+  .quick-links {
+    margin-top: 2vh;
+  }
+
+  .contacts {
+    margin-top: 2vh;
+    margin-right: 1vw;
+  }
+
+  #copyright {
+    margin-top: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

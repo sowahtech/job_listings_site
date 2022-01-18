@@ -4,7 +4,7 @@ import Job from './Job';
 const Jobs = ({data, setKeywords, keywords}) => {
 	console.log(data);
 
-    const [filteredData, setFilteredData] = useState(data);
+    const [filteredData, setFilteredData] = useState([]);
 
     const modifiedData = () => {
         if(keywords.length > 0) {
