@@ -1,4 +1,4 @@
-/* import {useState} from 'react';
+import {useState} from 'react';
 import data from "./data.json";
 import Jobs from "./components/Jobs";
 import Header from "./components/Header";
@@ -31,9 +31,9 @@ function App() {
   );
 }
 
-export default App; */
+export default App;
 
-import React from 'react';
+/* import React from 'react';
 import Home from './components/Home';
 
 function App(props) {
@@ -43,3 +43,4 @@ function App(props) {
 }
 
 export default App;
+ */
