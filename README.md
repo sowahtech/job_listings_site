@@ -71,5 +71,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Acknowledgement
 
-I had a lot of help from this video on youtube
+### I had a lot of help from this video on youtube
+
 https://www.youtube.com/watch?v=-0zQTq4mZAA
+
+### I had help to understand react hooks from this source
+
+https://reactjs.org/docs/hooks-intro.html
